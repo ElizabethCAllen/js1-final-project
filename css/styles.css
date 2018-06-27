@@ -1,0 +1,115 @@
+/* global helper classes */
+.font1{
+  font-family: 'Lobster', cursive;
+}
+.font2{
+  font-family: 'Permanent Marker', cursive;
+}
+.shadow{
+  text-shadow: 1px 1px 2px white;
+}
+.float-right{
+  float:right;
+}
+/* end global helper classes */
+
+/* begin jumbotron */
+.hero{
+  height: 90em;
+  background-image: url(../img/katie-moum-623919-unsplash.jpg);
+  background-size: cover;
+  background-position: right;
+  color: black;
+}
+.header-text{
+  padding-top: 1em;
+  padding-bottom: 20px;
+  font-family: 'Lobster', cursive;
+  text-align: center;
+  text-shadow: 1px 1px 2px white;
+  font-size: 5em;
+}
+.ntdl{
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  text-shadow: 1px 1px 2px white;
+}
+
+.btn{
+  height: 2em;
+  width: 3em;
+  background: transparent;
+}
+
+* {
+    box-sizing: border-box;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    font-size: 18px;
+    transition: 0.2s;
+    background: rgb(255, 255, 255, 0.3);
+    font-family: 'Permanent Marker', cursive;
+    /* make the list items unselectable */
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+ul li.checked {
+  background: rgb(179, 179, 179, 0.6);
+  text-decoration: line-through;
+}
+ul li.checked::before {
+    content: '';
+    position: absolute;
+    float: right;
+    transform: rotate(45deg);
+    height: 15px;
+    width: 7px;
+    display: block;
+}
+
+.close {
+    top: 0;
+    padding: 12px 16px 12px 16px;
+}
+.close:hover {
+    background-color: rgb(102, 102, 102);
+    color: black;
+}
+input {
+    margin-left: 2em;
+    border: none;
+    border-radius: 0;
+    width: 75%;
+    padding: 10px;
+    float: left;
+    font-size: 16px;
+    padding-left: 3em;
+}
+.addBtn {
+    padding: 10px;
+    margin-right: 5em;
+    width: 10%;
+    background: rgb(102, 102, 102);
+    color: black;
+    float: right;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 0;
+}
+
+.addBtn:hover {
+    background-color: rgb(102, 102, 102);
+}

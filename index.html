@@ -4,15 +4,68 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title> title</title>
+    <title> todo app</title>
     <!-- put a title in numbnuts -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="js/bootstrap.min.js" rel="stylesheet">
+    <link  href="https://fonts.googleapis.com/css?family=Lobster|Permanent+Marker" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <div class="hero">
+      <div class="container">
+        <h1 class="header-text text-centered">Todo List</h1>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <input class="font2" type="text" id="myInput" placeholder="Title...">
+          <span onclick="newElement('add')" class="addBtn ">
+            <i class="fas fa-check icon"></i>
+          </span>
+        </div>
+      </div>
+          <ul class="shadow" id="myUL">
+            <li>
+              <p>it the gym
+              <button class="btn close float-right">
+                <i class="fas fa-times icon"></i>
+              </button>
+              <button class="btn edit float-right">
+                <i class="fas fa-edit icon"></i>
+              </button>
+              <button class="btn checked float-right">
+                <i class="fas fa-check icon"></i>
+              </button>
+              </p>
+            </li>
+            <li class="checked">
+              <p>Pay bills
+              <button class="btn close float-right">
+                <i class="fas fa-times icon"></i>
+              </button>
+              <button class="btn edit float-right">
+                <i class="fas fa-edit icon"></i>
+              </button>
+
+              <button class="btn checked float-right">
+                <i class="fas fa-check icon"></i>
+              </button>
+              </p>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+
+
     <!-- keep this stuff below -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
     <script src="js/bootstrap.min.js"></script>
   </body>
 </html>
